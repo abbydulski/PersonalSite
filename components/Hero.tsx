@@ -21,7 +21,7 @@ export default function Hero() {
       {/* Content */}
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
         <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white">
-          Hi, I'm <span className="text-blue-400">Your Name</span>
+          Hi, I&apos;m <span className="text-blue-400">Your Name</span>
         </h1>
         <p className="text-xl md:text-2xl mb-8 text-gray-200">
           Software Developer | Problem Solver | Creator

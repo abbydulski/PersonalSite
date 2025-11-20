@@ -24,8 +24,8 @@ export default function Contact() {
           Get In Touch
         </h2>
         <p className="text-xl text-gray-200 mb-12 max-w-2xl mx-auto">
-          I'm always open to new opportunities and collaborations. Feel free to
-          reach out if you'd like to work together!
+          I&apos;m always open to new opportunities and collaborations. Feel free to
+          reach out if you&apos;d like to work together!
         </p>
 
         <div className="bg-white/10 backdrop-blur-md rounded-lg p-8 md:p-12 mb-8">

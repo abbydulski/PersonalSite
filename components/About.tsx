@@ -25,13 +25,13 @@ export default function About() {
         </h2>
         <div className="bg-white/10 backdrop-blur-md rounded-lg p-8 md:p-12">
           <p className="text-lg md:text-xl text-gray-200 mb-6 leading-relaxed">
-            I'm a passionate software developer with a love for creating
+            I&apos;m a passionate software developer with a love for creating
             innovative solutions to complex problems. With experience in
             full-stack development, I enjoy bringing ideas to life through
             clean, efficient code.
           </p>
           <p className="text-lg md:text-xl text-gray-200 leading-relaxed">
-            When I'm not coding, you can find me exploring new technologies,
+            When I&apos;m not coding, you can find me exploring new technologies,
             contributing to open-source projects, or enjoying the beautiful
             views of the Charles River and Golden Gate Bridge.
           </p>
