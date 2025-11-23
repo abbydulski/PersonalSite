@@ -14,28 +14,27 @@ export default function Hero() {
           backgroundAttachment: "fixed",
         }}
       >
-        {/* Dark overlay for text readability */}
-        <div className="absolute inset-0 bg-black/60"></div>
+        {/* Light overlay for text readability */}
+        <div className="absolute inset-0 bg-white/40"></div>
       </div>
 
       {/* Content */}
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-        <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white">
-          Hi, I&apos;m <span className="text-blue-400">Your Name</span>
+        <h1 className="text-5xl md:text-7xl font-bold mb-6 text-gray-900">
+          Hi, I&apos;m <span className="text-rose-500">Abby</span>
         </h1>
-        <p className="text-xl md:text-2xl mb-8 text-gray-200">
-          Software Developer | Problem Solver | Creator
+        <p className="text-xl md:text-2xl mb-8 text-gray-800">
         </p>
         <div className="flex gap-4 justify-center">
           <a
             href="#projects"
-            className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold transition-colors"
+            className="bg-rose-400 hover:bg-rose-500 text-white px-8 py-3 rounded-lg font-semibold transition-colors shadow-lg"
           >
             View My Work
           </a>
           <a
             href="#contact"
-            className="border-2 border-white hover:bg-white hover:text-black text-white px-8 py-3 rounded-lg font-semibold transition-colors"
+            className="border-2 border-gray-800 hover:bg-gray-800 hover:text-white text-gray-800 px-8 py-3 rounded-lg font-semibold transition-colors shadow-lg"
           >
             Get In Touch
           </a>
@@ -46,7 +45,7 @@ export default function Hero() {
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10">
         <a href="#about" className="animate-bounce block">
           <svg
-            className="w-6 h-6 text-white"
+            className="w-6 h-6 text-gray-800"
             fill="none"
             strokeLinecap="round"
             strokeLinejoin="round"

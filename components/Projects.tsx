@@ -1,21 +1,21 @@
 export default function Projects() {
   const projects = [
     {
-      title: "Project One",
+      title: "",
       description: "A full-stack web application built with Next.js and PostgreSQL. Features include user authentication, real-time updates, and responsive design.",
       tech: ["Next.js", "TypeScript", "PostgreSQL", "Tailwind CSS"],
       github: "https://github.com/yourusername/project-one",
       demo: "https://project-one-demo.vercel.app",
     },
     {
-      title: "Project Two",
+      title: "",
       description: "An innovative mobile-first application that solves real-world problems with elegant UI/UX and robust backend architecture.",
       tech: ["React", "Node.js", "MongoDB", "Express"],
       github: "https://github.com/yourusername/project-two",
       demo: "https://project-two-demo.vercel.app",
     },
     {
-      title: "Project Three",
+      title: "",
       description: "Open-source tool that helps developers streamline their workflow. Built with performance and developer experience in mind.",
       tech: ["Python", "FastAPI", "Docker", "AWS"],
       github: "https://github.com/yourusername/project-three",
@@ -38,32 +38,32 @@ export default function Projects() {
           backgroundAttachment: "fixed",
         }}
       >
-        {/* Dark overlay for text readability */}
-        <div className="absolute inset-0 bg-black/70"></div>
+        {/* Light overlay for text readability */}
+        <div className="absolute inset-0 bg-white/50"></div>
       </div>
 
       {/* Content */}
       <div className="relative z-10 max-w-6xl mx-auto px-4 py-20">
-        <h2 className="text-4xl md:text-5xl font-bold mb-12 text-white text-center">
+        <h2 className="text-4xl md:text-5xl font-bold mb-12 text-gray-900 text-center">
           Featured Projects
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project) => (
             <div
               key={project.title}
-              className="bg-white/10 backdrop-blur-md rounded-lg p-6 hover:bg-white/20 transition-all hover:scale-105"
+              className="bg-white/80 backdrop-blur-md rounded-lg p-6 hover:bg-white/90 transition-all hover:scale-105 shadow-xl"
             >
-              <h3 className="text-2xl font-bold mb-3 text-white">
+              <h3 className="text-2xl font-bold mb-3 text-gray-900">
                 {project.title}
               </h3>
-              <p className="text-gray-200 mb-4 leading-relaxed">
+              <p className="text-gray-700 mb-4 leading-relaxed">
                 {project.description}
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
                 {project.tech.map((tech) => (
                   <span
                     key={tech}
-                    className="bg-blue-500/30 text-blue-200 px-3 py-1 rounded-full text-sm"
+                    className="bg-rose-100 text-rose-700 px-3 py-1 rounded-full text-sm font-medium"
                   >
                     {tech}
                   </span>
@@ -74,7 +74,7 @@ export default function Projects() {
                   href={project.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-400 hover:text-blue-300 font-semibold"
+                  className="text-rose-500 hover:text-rose-600 font-semibold"
                 >
                   GitHub →
                 </a>
@@ -82,7 +82,7 @@ export default function Projects() {
                   href={project.demo}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-400 hover:text-blue-300 font-semibold"
+                  className="text-rose-500 hover:text-rose-600 font-semibold"
                 >
                   Live Demo →
                 </a>
