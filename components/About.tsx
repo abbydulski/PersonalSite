@@ -9,10 +9,10 @@ export default function About() {
         className="absolute inset-0 z-0"
         style={{
           backgroundImage: "url('/images/about-bg.jpg')",
-          backgroundSize: "cover",
+          backgroundSize: "auto 100%",
           backgroundPosition: "center center",
           backgroundRepeat: "no-repeat",
-          imageRendering: "crisp-edges",
+          filter: "blur(2px)",
         }}
       >
         {/* Light overlay for text readability */}
