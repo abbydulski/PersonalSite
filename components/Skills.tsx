@@ -16,8 +16,9 @@ export default function Skills() {
         style={{
           backgroundImage: "url('/images/skills-bg.jpg')",
           backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundAttachment: "fixed",
+          backgroundPosition: "center center",
+          backgroundRepeat: "no-repeat",
+          imageRendering: "crisp-edges",
         }}
       >
         {/* Light overlay for text readability */}

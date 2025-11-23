@@ -34,8 +34,9 @@ export default function Projects() {
         style={{
           backgroundImage: "url('/images/projects-bg.jpg')",
           backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundAttachment: "fixed",
+          backgroundPosition: "center center",
+          backgroundRepeat: "no-repeat",
+          imageRendering: "crisp-edges",
         }}
       >
         {/* Light overlay for text readability */}
