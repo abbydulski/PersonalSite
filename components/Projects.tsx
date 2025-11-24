@@ -33,10 +33,9 @@ export default function Projects() {
         className="absolute inset-0 z-0"
         style={{
           backgroundImage: "url('/images/projects-bg.jpg')",
-          backgroundSize: "auto 100%",
+          backgroundSize: "cover",
           backgroundPosition: "center center",
           backgroundRepeat: "no-repeat",
-          filter: "blur(2px)",
         }}
       >
         {/* Light overlay for text readability */}

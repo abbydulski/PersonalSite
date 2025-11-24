@@ -15,10 +15,9 @@ export default function Skills() {
         className="absolute inset-0 z-0"
         style={{
           backgroundImage: "url('/images/skills-bg.jpg')",
-          backgroundSize: "auto 100%",
+          backgroundSize: "cover",
           backgroundPosition: "center center",
           backgroundRepeat: "no-repeat",
-          filter: "blur(2px)",
         }}
       >
         {/* Light overlay for text readability */}
