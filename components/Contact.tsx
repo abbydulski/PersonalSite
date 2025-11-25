@@ -78,7 +78,7 @@ export default function Contact() {
         </div>
 
         <p className="text-gray-600">
-          © 2025 Abby Dulski. Built with Next.js and Tailwind CSS.
+          © 2025 Abby Dulski.
         </p>
       </div>
     </section>
