@@ -50,7 +50,7 @@ export default function Projects() {
         <h2 className="text-4xl md:text-5xl font-bold mb-12 text-gray-900 text-center">
           Featured Projects
         </h2>
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project) => (
             <div
               key={project.title}
