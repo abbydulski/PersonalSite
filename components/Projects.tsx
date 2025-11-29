@@ -16,6 +16,14 @@ export default function Projects() {
       demo: "https://abbydulski.github.io/Sleep-Stage-Classification/",
       image: "/images/sleep-preview.jpg",
     },
+    {
+      title: "Card Generator",
+      description: "Generate personalized cards for anyone in your life using Reve.com! A creative tool to design and customize greeting cards.",
+      tech: ["TypeScript", "Next.js", "Web Development"],
+      github: "https://github.com/abbydulski/CardGenerator",
+      demo: "https://card-generator-puce-nu.vercel.app",
+      image: "/images/cardgenerator-preview.jpg",
+    },
   ];
 
   return (
