@@ -24,6 +24,14 @@ export default function Projects() {
       demo: "https://card-generator-puce-nu.vercel.app",
       image: "/images/cardgenerator-preview.jpg",
     },
+    {
+      title: "RepoSync",
+      description: "A version control solutions platform for the biology and pharmaceutical industry. Deployed on Railway for seamless collaboration.",
+      tech: ["Python", "Web Development", "Railway"],
+      github: "https://github.com/abbydulski/RepoSyncSite",
+      demo: "https://web-production-5f43e.up.railway.app",
+      image: "/images/reposync-preview.jpg",
+    },
   ];
 
   return (
@@ -50,7 +58,7 @@ export default function Projects() {
         <h2 className="text-4xl md:text-5xl font-bold mb-12 text-gray-900 text-center">
           Featured Projects
         </h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project) => (
             <div
               key={project.title}
