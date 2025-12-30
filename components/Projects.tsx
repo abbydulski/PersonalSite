@@ -66,12 +66,12 @@ export default function Projects() {
         <h2 className="text-4xl md:text-5xl font-bold mb-12 text-gray-900 text-center">
           Featured Projects
         </h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-6 gap-8">
           {projects.map((project, index) => (
             <div
               key={project.title}
-              className={`bg-white/80 backdrop-blur-md rounded-lg overflow-hidden hover:bg-white/90 transition-all hover:scale-105 shadow-xl ${
-                index === 3 ? "lg:col-start-2" : ""
+              className={`bg-white/80 backdrop-blur-md rounded-lg overflow-hidden hover:bg-white/90 transition-all hover:scale-105 shadow-xl lg:col-span-2 ${
+                index === 3 ? "lg:col-start-2" : index === 4 ? "lg:col-start-4" : ""
               }`}
             >
               {/* Project Image */}
