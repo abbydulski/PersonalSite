@@ -1,6 +1,14 @@
 export default function Projects() {
   const projects = [
     {
+      title: "Runway",
+      description: "Giving early stage companies a one-stop-shop for setting up operations.",
+      tech: ["TypeScript", "Next.js", "Web Development"],
+      github: "https://github.com/abbydulski/Runway",
+      demo: "https://runway-sable.vercel.app/",
+      image: "/images/runway-preview.jpg",
+    },
+    {
       title: "Wavelength",
       description: "A friends-first social feed with no short-form content or endless scroll. Share real experiences with photos and ratings, and quickly see what your circle is up to. Features a discover map to find useful, recent posts within 100 miles.",
       tech: ["JavaScript", "React", "Web Development"],
@@ -31,14 +39,6 @@ export default function Projects() {
       github: "https://github.com/abbydulski/RepoSyncSite",
       demo: "https://web-production-5f43e.up.railway.app",
       image: "/images/reposync-preview.jpg",
-    },
-    {
-      title: "Runway",
-      description: "Giving early stage companies a one-stop-shop for setting up operations.",
-      tech: ["TypeScript", "Next.js", "Web Development"],
-      github: "https://github.com/abbydulski/Runway",
-      demo: "https://runway-sable.vercel.app/",
-      image: "/images/runway-preview.jpg",
     },
   ];
 
@@ -71,7 +71,7 @@ export default function Projects() {
             <div
               key={project.title}
               className={`bg-white/80 backdrop-blur-md rounded-lg overflow-hidden hover:bg-white/90 transition-all hover:scale-105 shadow-xl ${
-                index >= 3 ? "lg:col-start-2" : ""
+                index === 3 ? "lg:col-start-2" : ""
               }`}
             >
               {/* Project Image */}
