@@ -32,6 +32,14 @@ export default function Projects() {
       demo: "https://web-production-5f43e.up.railway.app",
       image: "/images/reposync-preview.jpg",
     },
+    {
+      title: "Runway",
+      description: "Giving early stage companies a one-stop-shop for setting up operations.",
+      tech: ["TypeScript", "Next.js", "Web Development"],
+      github: "https://github.com/abbydulski/Runway",
+      demo: "https://runway-sable.vercel.app/",
+      image: "/images/runway-preview.jpg",
+    },
   ];
 
   return (
@@ -58,11 +66,13 @@ export default function Projects() {
         <h2 className="text-4xl md:text-5xl font-bold mb-12 text-gray-900 text-center">
           Featured Projects
         </h2>
-        <div className="grid md:grid-cols-2 gap-8">
-          {projects.map((project) => (
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {projects.map((project, index) => (
             <div
               key={project.title}
-              className="bg-white/80 backdrop-blur-md rounded-lg overflow-hidden hover:bg-white/90 transition-all hover:scale-105 shadow-xl"
+              className={`bg-white/80 backdrop-blur-md rounded-lg overflow-hidden hover:bg-white/90 transition-all hover:scale-105 shadow-xl ${
+                index >= 3 ? "lg:col-start-2" : ""
+              }`}
             >
               {/* Project Image */}
               <div className="w-full h-48 bg-gray-200 overflow-hidden">
