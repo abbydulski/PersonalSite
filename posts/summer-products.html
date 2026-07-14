@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>my favorite five things for summer 2026 — Abby Dulski</title>
+<script>
+  (function () {
+    var stored = localStorage.getItem('theme');
+    var theme = stored === 'dark' ? 'dark' : 'light';
+    document.documentElement.setAttribute('data-theme', theme);
+    document.addEventListener('DOMContentLoaded', function () {
+      var btn = document.getElementById('theme-toggle');
+      if (!btn) return;
+      var setIcon = function (t) { btn.textContent = t === 'dark' ? '☀' : '☾'; };
+      setIcon(document.documentElement.getAttribute('data-theme'));
+      btn.addEventListener('click', function () {
+        var next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        localStorage.setItem('theme', next);
+        setIcon(next);
+      });
+    });
+  })();
+</script>
+<link rel="icon" type="image/png" href="../logos+icons/abbylogo.png">
+<link rel="stylesheet" href="../style.css?v=7">
+</head>
+<body>
+<div class="wrap post-wide">
+
+  <header class="masthead">
+    <a class="name" href="../index.html"><img class="site-logo" src="../logos+icons/abbylogo.png" alt=""> abby dulski</a>
+    <nav class="masthead-nav">
+      <a href="../writing.html" class="active">writing</a>
+      <a href="../projects.html">projects</a>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle theme"></button>
+    </nav>
+  </header>
+
+  <article class="post post-wide">
+    <a class="post-back" href="../writing.html">&larr; writing</a>
+    <p class="date">july 13, 2026</p>
+    <h1>my favorite five things for summer 2026</h1>
+    <p class="dek">a few things that I have been using a lot.</p>
+
+    <div class="post-body">
+      <p>Summer feels like it's in full swing. Here are five things I've been using constantly. A mix of practical and fun, no real theme other than I'd notice if any of them disappeared.</p>
+    </div>
+
+    <!-- 01 · image LEFT -->
+    <div class="product-row">
+      <div class="product-img">
+        <img src="../image_posts/shockz.jpeg" alt="Shokz OpenRun">
+      </div>
+      <div class="product-text">
+        <p class="product-num">01</p>
+        <h2><a href="https://shokz.com/pages/openrun" target="_blank" rel="noopener">Shokz OpenRun</a></h2>
+        <p>Bone conduction, so it feels like running with a speaker strapped to your head (except you can still hear everything around you). When I ran a lot in Boston where both cars and pedestrians weren't following traffic signs, being able to hear outside noise was crucial. Also useful for every day like cooking in a kitchen when your roommate might ask you something mid-recipe. They are extremely lightweight and fit great. I sometimes forget I have them on.</p>
+      </div>
+    </div>
+
+    <!-- 02 · image RIGHT -->
+    <div class="product-row flip">
+      <div class="product-img">
+        <img src="../image_posts/saie-mascara.png" alt="Saie Mascara 101">
+      </div>
+      <div class="product-text">
+        <p class="product-num">02</p>
+        <h2><a href="https://saiehello.com/products/mascara-101" target="_blank" rel="noopener">Saie Mascara 101</a></h2>
+        <p>I sweat, cry, and wipe my eyes a lot more than a mascara-lover should. This mascara does not budge. The tube also lasts about 3 times longer than my drugstore mascara's would, and rarely clumps upon application. I use the brown, which I have found with my brown hair gives a more natural and subtle look than the pure black I used to use. </p>
+      </div>
+    </div>
+
+    <!-- 03 · image LEFT -->
+    <div class="product-row">
+      <div class="product-img">
+        <img src="../image_posts/augment-code.png" alt="Augment Code">
+      </div>
+      <div class="product-text">
+        <p class="product-num">03</p>
+        <h2><a href="https://www.augmentcode.com/" target="_blank" rel="noopener">Augment Code</a></h2>
+        <p>The specific tool I use is very subject to change, but AI-assisted development is life changing. I have never been able to sit down and make as much progress on a site like this as I can now. It feels much less like a technical project and much more like an idea expression and product project. I recently mocked up a redesign for my company's entire site with it too. It feels like I can build whatever I picture; an MVP's now the standard.</p>
+      </div>
+    </div>
+
+    <!-- 04 · image RIGHT -->
+    <div class="product-row flip">
+      <div class="product-img">
+        <img src="../image_posts/tennis.jpeg" alt="Wilson Intrigue SE Tennis Racquet">
+      </div>
+      <div class="product-text">
+        <p class="product-num">04</p>
+        <h2><a href="https://www.dickssportinggoods.com/p/wilson-intrigue-se-tennis-racquet-24wilantrgs2024xxtnn/24wilantrgs2024xxtnn" target="_blank" rel="noopener">Wilson Intrigue SE Tennis Racquet</a></h2>
+        <p>Started taking lessons at the local public park this summer and this racquet has been a great beginner pick: cheap, lightweight, and forgiving while I figure out what I'm doing. Tennis has been a great way to move my body and feel good while playing a sport, not just grinding through a workout. There is also a mental piece to it. Learning new coordination, new positioning, and figuring out what I am supposed to be doing at any given moment.</p>
+      </div>
+    </div>
+
+    <!-- 05 · image LEFT -->
+    <div class="product-row">
+      <div class="product-img">
+        <img src="../image_posts/fpshorts.jpeg" alt="Free People Movement Get Your Flirt On Shorts">
+      </div>
+      <div class="product-text">
+        <p class="product-num">05</p>
+        <h2><a href="https://www.freepeople.com/fpmovement/shop/get-your-flirt-on-shorts/" target="_blank" rel="noopener">Free People Get Your Flirt On Shorts</a></h2>
+        <p>My favorite running shorts. Cute, come in fun colors (the orange and white are my faves), and people constantly mistake them for a skirt. I've run in a lot of shorts that are too short or too tight or I chafe a ton, but I have not had an issue with these. They are high-waisted enough that they look and feel good with just a sports bra on top too, if that's your thing.</p>
+      </div>
+    </div>
+
+  </article>
+
+  <footer class="site-footer">
+    <p>abbydulski.me</p>
+  </footer>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>someone told me to change this setting and i never went back — Abby Dulski</title>
+<script>
+  (function () {
+    var stored = localStorage.getItem('theme');
+    var theme = stored === 'dark' ? 'dark' : 'light';
+    document.documentElement.setAttribute('data-theme', theme);
+    document.addEventListener('DOMContentLoaded', function () {
+      var btn = document.getElementById('theme-toggle');
+      if (!btn) return;
+      var setIcon = function (t) { btn.textContent = t === 'dark' ? '☀' : '☾'; };
+      setIcon(document.documentElement.getAttribute('data-theme'));
+      btn.addEventListener('click', function () {
+        var next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        localStorage.setItem('theme', next);
+        setIcon(next);
+      });
+    });
+  })();
+</script>
+<link rel="icon" type="image/png" href="../logos+icons/abbylogo.png">
+<link rel="stylesheet" href="../style.css?v=7">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="masthead">
+    <a class="name" href="../index.html"><img class="site-logo" src="../logos+icons/abbylogo.png" alt=""> abby dulski</a>
+    <nav class="masthead-nav">
+      <a href="../writing.html" class="active">writing</a>
+      <a href="../projects.html">projects</a>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle theme"></button>
+    </nav>
+  </header>
+
+  <article class="post">
+    <a class="post-back" href="../writing.html">&larr; writing</a>
+    <p class="date">july 13, 2026</p>
+    <h1>someone told me to change this setting and i never went back</h1>
+    <p class="dek">recent UX updates I have made</p>
+
+    <div class="post-body">
+      <p>I used to end every day minimizing a combination of 9+ Chrome windows, VS code windows, Slack pages, & whatever else I had open so that I could open them all back up the next day. With a few simple UX suggestions, I have been able to maintain all windows on different screens and navigate through them exclusively through my keyboard.</p>
+
+      <h2><a href="https://github.com/nikitabobko/AeroSpace" target="_blank" rel="noopener">aerospace</a></h2>
+      <p>an i3-like tiling window manager for Mac. instead of floating windows you stack and minimize, organizing everything into workspaces you move between with a keyboard shortcut. there is also no SIP disabling required unlike other window managers for Mac.</p>
+      <p><strong>install:</strong> <code>brew install --cask nikitabobko/tap/aerospace</code> (via <a href="https://brew.sh/" target="_blank" rel="noopener">Homebrew</a>). here&rsquo;s the <a href="https://nikitabobko.github.io/AeroSpace/guide" target="_blank" rel="noopener">getting started guide</a>.</p>
+
+      <h2><a href="https://chromewebstore.google.com/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb" target="_blank" rel="noopener">vimium</a></h2>
+      <p>a Chrome extension that lets you navigate entirely with the keyboard: you can open links, switch tabs, scroll, search, all mouse-less. I can now refresh pages and open new tabs with the click of one key.</p>
+      <p><strong>one important note:</strong> I did have a problem with it on Coderpad during an interview, so I would disable before going into any live coding interviews.</p>
+      <p><strong>install:</strong> search &ldquo;Vimium&rdquo; in the Chrome Web Store, or use the link above, and click Add to Chrome.</p>
+
+      <h2><span style="color: var(--green-deep)">vertical tabs</span></h2>
+      <p>a built-in Chrome flag currently in experimentation. pretty self explanatory - your tabs are in a sidebar vertically with readable titles on all.</p>
+      <p><strong>enable it:</strong> go to <code>chrome://flags</code>, search &ldquo;Vertical Tabs,&rdquo; switch it to Enabled, then relaunch Chrome / right click to enable vertical tabs.</p>
+    </div>
+  </article>
+
+  <footer class="site-footer">
+    <p>abbydulski.me</p>
+  </footer>
+
+</div>
+</body>
+</html>

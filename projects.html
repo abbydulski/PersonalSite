@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Abby Dulski</title>
+<script>
+  (function () {
+    var stored = localStorage.getItem('theme');
+    var theme = stored === 'dark' ? 'dark' : 'light';
+    document.documentElement.setAttribute('data-theme', theme);
+    document.addEventListener('DOMContentLoaded', function () {
+      var btn = document.getElementById('theme-toggle');
+      if (!btn) return;
+      var setIcon = function (t) { btn.textContent = t === 'dark' ? '☀' : '☾'; };
+      setIcon(document.documentElement.getAttribute('data-theme'));
+      btn.addEventListener('click', function () {
+        var next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        localStorage.setItem('theme', next);
+        setIcon(next);
+      });
+    });
+  })();
+</script>
+<link rel="icon" type="image/png" href="logos+icons/abbylogo.png">
+<link rel="stylesheet" href="style.css?v=7">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="masthead">
+    <a class="name" href="index.html"><img class="site-logo" src="logos+icons/abbylogo.png" alt=""> abby dulski</a>
+    <nav class="masthead-nav">
+      <a href="writing.html">writing</a>
+      <a href="projects.html" class="active">projects</a>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle theme"></button>
+    </nav>
+  </header>
+
+  <div class="feed">
+
+    <div class="project-entry">
+      <p class="date">2025</p>
+      <h2>wavelength</h2>
+      <p class="desc">everyone can be an influencer. building a local discovery app where you rate and recommend places (restaurants, coffee shops, gyms, bars, etc.) to your friends. recommendations from people you trust with a social aspect to stay up to date with your friends.</p>
+      <p class="project-links">
+        <a href="https://wavelength-tawny-mu.vercel.app/" target="_blank" rel="noopener">live site</a>
+        <a href="https://github.com/abbydulski/Wavelength" target="_blank" rel="noopener">github</a>
+      </p>
+    </div>
+
+    <div class="project-entry">
+      <p class="date">2025</p>
+      <h2>card generator</h2>
+      <p class="desc">generate personalized cards for anyone in your life using Reve. a creative tool to design and customize greeting cards.</p>
+      <p class="project-links">
+        <a href="https://card-generator-puce-nu.vercel.app/" target="_blank" rel="noopener">live site</a>
+        <a href="https://github.com/abbydulski/CardGenerator" target="_blank" rel="noopener">github</a>
+      </p>
+    </div>
+
+    <div class="project-entry">
+      <p class="date">2024 — mit thesis</p>
+      <h2>sleep stage classification</h2>
+      <p class="desc">an open-source model that takes heart rate and accelerometer data from your Apple Watch or Samsung Watch and figures out what sleep stage you're in. built it for my thesis.</p>
+      <p class="project-links">
+        <a href="https://abbydulski.github.io/Sleep-Stage-Classification/" target="_blank" rel="noopener">demo</a>
+        <a href="https://github.com/abbydulski/Sleep-Stage-Classification" target="_blank" rel="noopener">github</a>
+      </p>
+    </div>
+
+  </div>
+
+  <footer class="site-footer">
+    <p>abbydulski.me</p>
+  </footer>
+
+</div>
+</body>
+</html>

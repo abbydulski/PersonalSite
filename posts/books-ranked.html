@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>my top reads — Abby Dulski</title>
+<script>
+  (function () {
+    var stored = localStorage.getItem('theme');
+    var theme = stored === 'dark' ? 'dark' : 'light';
+    document.documentElement.setAttribute('data-theme', theme);
+    document.addEventListener('DOMContentLoaded', function () {
+      var btn = document.getElementById('theme-toggle');
+      if (!btn) return;
+      var setIcon = function (t) { btn.textContent = t === 'dark' ? '☀' : '☾'; };
+      setIcon(document.documentElement.getAttribute('data-theme'));
+      btn.addEventListener('click', function () {
+        var next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        localStorage.setItem('theme', next);
+        setIcon(next);
+      });
+    });
+  })();
+</script>
+<link rel="icon" type="image/png" href="../logos+icons/abbylogo.png">
+<link rel="stylesheet" href="../style.css?v=7">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="masthead">
+    <a class="name" href="../index.html"><img class="site-logo" src="../logos+icons/abbylogo.png" alt=""> abby dulski</a>
+    <nav class="masthead-nav">
+      <a href="../writing.html" class="active">writing</a>
+      <a href="../projects.html">projects</a>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle theme"></button>
+    </nav>
+  </header>
+
+  <article class="post">
+    <a class="post-back" href="../writing.html">← writing</a>
+    <p class="date">july 10, 2026</p>
+    <h1>my top reads</h1>
+    <p class="dek">always subject to change.</p>
+
+    <div class="post-body">
+
+      <ol class="book-list">
+        <li>
+          <div class="now-item">
+            <p class="now-label">1</p>
+            <p class="now-value"><a class="now-link" href="https://www.goodreads.com/en/book/show/63221207-brain-on-fire" target="_blank" rel="noopener">Brain on Fire — Susannah Cahalan</a></p>
+            <a class="now-preview" href="https://www.goodreads.com/en/book/show/63221207-brain-on-fire" target="_blank" rel="noopener">
+              <img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1667594294i/63221207.jpg" alt="Brain on Fire by Susannah Cahalan" loading="lazy">
+            </a>
+          </div>
+        </li>
+        <li>
+          <div class="now-item">
+            <p class="now-label">2</p>
+            <p class="now-value"><a class="now-link" href="https://www.goodreads.com/en/book/show/41733839-the-great-gatsby" target="_blank" rel="noopener">The Great Gatsby — F. Scott Fitzgerald</a></p>
+            <a class="now-preview" href="https://www.goodreads.com/en/book/show/41733839-the-great-gatsby" target="_blank" rel="noopener">
+              <img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1650033243i/41733839.jpg" alt="The Great Gatsby by F. Scott Fitzgerald" loading="lazy">
+            </a>
+          </div>
+        </li>
+        <li>
+          <div class="now-item">
+            <p class="now-label">3</p>
+            <p class="now-value"><a class="now-link" href="https://www.goodreads.com/en/book/show/59227941-the-hotel-nantucket" target="_blank" rel="noopener">The Hotel Nantucket — Elin Hilderbrand</a></p>
+            <a class="now-preview" href="https://www.goodreads.com/en/book/show/59227941-the-hotel-nantucket" target="_blank" rel="noopener">
+              <img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1634954735i/59227941.jpg" alt="The Hotel Nantucket by Elin Hilderbrand" loading="lazy">
+            </a>
+          </div>
+        </li>
+        <li>
+          <div class="now-item">
+            <p class="now-label">4</p>
+            <p class="now-value"><a class="now-link" href="https://www.goodreads.com/en/book/show/34928122-artemis" target="_blank" rel="noopener">Artemis — Andy Weir</a></p>
+            <a class="now-preview" href="https://www.goodreads.com/en/book/show/34928122-artemis" target="_blank" rel="noopener">
+              <img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1776234222i/34928122.jpg" alt="Artemis by Andy Weir" loading="lazy">
+            </a>
+          </div>
+        </li>
+        <li>
+          <div class="now-item">
+            <p class="now-label">5</p>
+            <p class="now-value"><a class="now-link" href="https://goodreads.com/book/show/32620332.The_Seven_Husbands_of_Evelyn_Hugo" target="_blank" rel="noopener">The Seven Husbands of Evelyn Hugo — Taylor Jenkins Reid</a></p>
+            <a class="now-preview" href="https://goodreads.com/book/show/32620332.The_Seven_Husbands_of_Evelyn_Hugo" target="_blank" rel="noopener">
+              <img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1664458703i/32620332.jpg" alt="The Seven Husbands of Evelyn Hugo by Taylor Jenkins Reid" loading="lazy">
+            </a>
+          </div>
+        </li>
+        <li>
+          <div class="now-item">
+            <p class="now-label">6</p>
+            <p class="now-value"><a class="now-link" href="https://www.goodreads.com/en/book/show/6609765-out-of-my-mind" target="_blank" rel="noopener">Out of My Mind — Sharon M. Draper</a></p>
+            <a class="now-preview" href="https://www.goodreads.com/en/book/show/6609765-out-of-my-mind" target="_blank" rel="noopener">
+              <img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1347602096i/6609765.jpg" alt="Out of My Mind by Sharon M. Draper" loading="lazy">
+            </a>
+          </div>
+        </li>
+        <li>
+          <div class="now-item">
+            <p class="now-label">7</p>
+            <p class="now-value"><a class="now-link" href="https://www.goodreads.com/book/show/26114135-all-the-ugly-and-wonderful-things" target="_blank" rel="noopener">All the Ugly and Wonderful Things — Bryn Greenwood</a></p>
+            <a class="now-preview" href="https://www.goodreads.com/book/show/26114135-all-the-ugly-and-wonderful-things" target="_blank" rel="noopener">
+              <img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1500552983i/26114135.jpg" alt="All the Ugly and Wonderful Things by Bryn Greenwood" loading="lazy">
+            </a>
+          </div>
+        </li>
+        <li>
+          <div class="now-item">
+            <p class="now-label">8</p>
+            <p class="now-value"><a class="now-link" href="https://www.goodreads.com/en/book/show/29780253-born-a-crime" target="_blank" rel="noopener">Born a Crime — Trevor Noah</a></p>
+            <a class="now-preview" href="https://www.goodreads.com/en/book/show/29780253-born-a-crime" target="_blank" rel="noopener">
+              <img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1473867911i/29780253.jpg" alt="Born a Crime by Trevor Noah" loading="lazy">
+            </a>
+          </div>
+        </li>
+        <li>
+          <div class="now-item">
+            <p class="now-label">9</p>
+            <p class="now-value"><a class="now-link" href="https://www.goodreads.com/book/show/12262741-wild" target="_blank" rel="noopener">Wild — Cheryl Strayed</a></p>
+            <a class="now-preview" href="https://www.goodreads.com/book/show/12262741-wild" target="_blank" rel="noopener">
+              <img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1453189881i/12262741.jpg" alt="Wild by Cheryl Strayed" loading="lazy">
+            </a>
+          </div>
+        </li>
+        <li>
+          <div class="now-item">
+            <p class="now-label">10</p>
+            <p class="now-value"><a class="now-link" href="https://www.goodreads.com/en/book/show/41021501-small-great-things" target="_blank" rel="noopener">Small Great Things — Jodi Picoult</a></p>
+            <a class="now-preview" href="https://www.goodreads.com/en/book/show/41021501-small-great-things" target="_blank" rel="noopener">
+              <img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1533135682i/41021501.jpg" alt="Small Great Things by Jodi Picoult" loading="lazy">
+            </a>
+          </div>
+        </li>
+      </ol>
+
+    </div>
+  </article>
+
+  <footer class="site-footer">
+    <p>abbydulski.me</p>
+  </footer>
+
+</div>
+</body>
+</html>

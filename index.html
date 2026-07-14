@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abby Dulski</title>
+<script>
+  (function () {
+    var stored = localStorage.getItem('theme');
+    var theme = stored === 'dark' ? 'dark' : 'light';
+    document.documentElement.setAttribute('data-theme', theme);
+    document.addEventListener('DOMContentLoaded', function () {
+      var btn = document.getElementById('theme-toggle');
+      if (!btn) return;
+      var setIcon = function (t) { btn.textContent = t === 'dark' ? '☀' : '☾'; };
+      setIcon(document.documentElement.getAttribute('data-theme'));
+      btn.addEventListener('click', function () {
+        var next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        localStorage.setItem('theme', next);
+        setIcon(next);
+      });
+    });
+  })();
+</script>
+<link rel="icon" type="image/png" href="logos+icons/abbylogo.png">
+<link rel="stylesheet" href="style.css?v=7">
+</head>
+<body>
+<div class="wrap home">
+
+  <header class="masthead">
+    <a class="name" href="index.html"><img class="site-logo" src="logos+icons/abbylogo.png" alt=""> abby dulski</a>
+    <nav class="masthead-nav">
+      <a href="writing.html">writing</a>
+      <a href="projects.html">projects</a>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle theme"></button>
+    </nav>
+  </header>
+
+  <div class="home-grid">
+
+  <div class="about">
+    <img class="headshot" src="headshot.jpg" alt="Abby Dulski" onerror="this.style.display='none'">
+
+    <p>Hi. I'm Abby. I grew up in SF, Marin, and the East Bay to then find myself on the opposite side of the country for 5 years of school in Cambridge where I studied CS + Neuroscience. I am now back on the West Coast, but this time in Silicon Valley (which feels like a whole new universe within the Bay Area).</p>
+
+    <p>I am working in venture capital &amp; operations for very early stage companies, which I have come to enjoy, but am still struggling to reconcile it with the years I spent getting my engineering degree. I spent 4 out of my 5 years at school on a D1 NCAA rowing team as well, teaching me so much of what I know about leadership, commitment, and hard work.</p>
+
+    <p>I love feeling strong &amp; participating in sport of any kind; I am still figuring out what this looks like without a team of my best friends and mandatory warmup time of 6:20am everyday, but I have found a lot of fun in casually running and challenging myself to learn tennis.</p>
+
+    <p>I also think it's fun to observe the fashion and beauty industries from the sideline. I could eat self-serve frozen yogurt for every meal, and I am a big fan of Noah Kahan, Tim McGraw, and Adele.</p>
+
+    <p class="signature-line">This is where I put all of it.</p>
+  </div>
+
+  <section class="now">
+    <p class="now-intro">what's got my attention</p>
+    <p class="now-updated">last updated <time id="last-updated" class="now-date">————.——.——</time></p>
+
+    <div class="now-grid">
+      <div class="now-item">
+        <p class="now-label">reading</p>
+        <p class="now-value"><a class="now-link" href="https://www.goodreads.com/en/book/show/42201431-the-unhoneymooners" target="_blank" rel="noopener">The Unhoneymooners — Christina Lauren</a></p>
+        <a class="now-preview" href="https://www.goodreads.com/en/book/show/42201431-the-unhoneymooners" target="_blank" rel="noopener">
+          <img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1548201335i/42201431.jpg" alt="The Unhoneymooners by Christina Lauren" loading="lazy">
+        </a>
+      </div>
+      <div class="now-item">
+        <p class="now-label">what I'm wearing</p>
+        <p class="now-value"><a class="now-link" href="https://www.freepeople.com/shop/lace-cashmere-tank-top/" target="_blank" rel="noopener">Free People lace cashmere tank</a></p>
+      </div>
+      <div class="now-item">
+        <p class="now-label">something i think is cool</p>
+        <p class="now-value"><a class="now-link" href="https://www.youtube.com/watch?v=F8p2MamNBgE" target="_blank" rel="noopener">Our First Transdural Procedure | Neuralink</a></p>
+        <a class="now-preview" href="https://www.youtube.com/watch?v=F8p2MamNBgE" target="_blank" rel="noopener">
+          <img src="https://i.ytimg.com/vi/F8p2MamNBgE/hqdefault.jpg" alt="Our First Transdural Procedure — Neuralink" loading="lazy">
+        </a>
+      </div>
+      <div class="now-item">
+        <p class="now-label">watching</p>
+        <p class="now-value"><a class="now-link" href="https://www.youtube.com/playlist?list=PLqQNt9DP_BNBKa8ss5ROk2wLYl9JUdeYS" target="_blank" rel="noopener">The Economics Of (WSJ)</a></p>
+        <a class="now-preview" href="https://www.youtube.com/playlist?list=PLqQNt9DP_BNBKa8ss5ROk2wLYl9JUdeYS" target="_blank" rel="noopener">
+          <img src="https://i.ytimg.com/vi/M_hSCHxialw/hqdefault.jpg" alt="The Economics Of — WSJ playlist" loading="lazy">
+        </a>
+      </div>
+      <div class="now-item">
+        <p class="now-label">building</p>
+        <p class="now-value"><a class="now-link" href="https://wavelength-tawny-mu.vercel.app/" target="_blank" rel="noopener">Wavelength</a></p>
+      </div>
+      <div class="now-item">
+        <p class="now-label">scent</p>
+        <p class="now-value"><a class="now-link" href="https://www.tocca.com/products/olio-sublime-profumato-florence-100ml" target="_blank" rel="noopener">Tocca Florence dry body oil</a></p>
+        <a class="now-preview" href="https://www.tocca.com/products/olio-sublime-profumato-florence-100ml" target="_blank" rel="noopener">
+          <img src="https://www.tocca.com/cdn/shop/files/tocca-dry-oil-dry-body-oil-florence-100ml-1172654264.jpg?v=1749580002&width=400" alt="Tocca Florence dry body oil" loading="lazy">
+        </a>
+      </div>
+    </div>
+
+    <div class="spotify-embed">
+      <iframe data-testid="embed-iframe" src="https://open.spotify.com/embed/playlist/2dDeMYbjifxHNSCrgW8rFn?utm_source=generator&si=e88a75f000124493" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+  </section>
+
+  </div>
+
+  <div class="links">
+    <a href="mailto:abbydulski@gmail.com">email</a>
+    <a href="https://www.linkedin.com/in/abbydulski/" target="_blank" rel="noopener">linkedin</a>
+    <a href="https://github.com/abbydulski" target="_blank" rel="noopener">github</a>
+  </div>
+
+  <footer class="site-footer">
+    <p>abbydulski.me</p>
+  </footer>
+
+</div>
+<script>
+  (function () {
+    var el = document.getElementById('last-updated');
+    if (!el) return;
+    var d = new Date(document.lastModified);
+    if (isNaN(d)) return;
+    var y = d.getFullYear();
+    var m = String(d.getMonth() + 1).padStart(2, '0');
+    var day = String(d.getDate()).padStart(2, '0');
+    el.textContent = y + '.' + m + '.' + day;
+    el.setAttribute('datetime', y + '-' + m + '-' + day);
+  })();
+</script>
+</body>
+</html>

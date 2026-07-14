@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Writing — Abby Dulski</title>
+<script>
+  (function () {
+    var stored = localStorage.getItem('theme');
+    var theme = stored === 'dark' ? 'dark' : 'light';
+    document.documentElement.setAttribute('data-theme', theme);
+    document.addEventListener('DOMContentLoaded', function () {
+      var btn = document.getElementById('theme-toggle');
+      if (!btn) return;
+      var setIcon = function (t) { btn.textContent = t === 'dark' ? '☀' : '☾'; };
+      setIcon(document.documentElement.getAttribute('data-theme'));
+      btn.addEventListener('click', function () {
+        var next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        localStorage.setItem('theme', next);
+        setIcon(next);
+      });
+    });
+  })();
+</script>
+<link rel="icon" type="image/png" href="logos+icons/abbylogo.png">
+<link rel="stylesheet" href="style.css?v=7">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="masthead">
+    <a class="name" href="index.html"><img class="site-logo" src="logos+icons/abbylogo.png" alt=""> abby dulski</a>
+    <nav class="masthead-nav">
+      <a href="writing.html" class="active">writing</a>
+      <a href="projects.html">projects</a>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle theme"></button>
+    </nav>
+  </header>
+
+  <div class="feed">
+
+    <a class="entry" href="posts/ui-tips.html">
+      <p class="date">july 13</p>
+      <h2>someone told me to change this setting and i never went back</h2>
+      <p class="desc">recent UX updates I have made</p>
+    </a>
+
+    <a class="entry" href="posts/summer-products.html">
+      <p class="date">july 13</p>
+      <h2>my favorite five things for summer 2026</h2>
+      <p class="desc">a few things that I have been using a lot.</p>
+    </a>
+
+    <a class="entry" href="posts/books-ranked.html">
+      <p class="date">july 10</p>
+      <h2>my top reads</h2>
+      <p class="desc">always subject to change.</p>
+    </a>
+
+    <!-- hidden until finished
+    <a class="entry" href="posts/not-an-engineer.html">
+      <p class="date">july 6</p>
+      <h2>on getting over the need to be an engineer</h2>
+      <p class="desc">i studied it. i can do it. i decided the point was something else.</p>
+    </a>
+    -->
+
+  </div>
+
+  <footer class="site-footer">
+    <p>abbydulski.me</p>
+  </footer>
+
+</div>
+</body>
+</html>
