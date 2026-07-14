@@ -410,12 +410,12 @@ nav.masthead-nav a.active {
 
 /* Home layout — bio + now sidebar */
 .wrap.home {
-  max-width: 920px;
+  max-width: 960px;
 }
 
 .home-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 300px;
+  grid-template-columns: minmax(0, 1fr) 340px;
   gap: 3rem;
   align-items: start;
 }
