@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>products i find fascinating — Abby Dulski</title>
+<script>
+  (function () {
+    var stored = localStorage.getItem('theme');
+    var theme = stored === 'dark' ? 'dark' : 'light';
+    document.documentElement.setAttribute('data-theme', theme);
+    document.addEventListener('DOMContentLoaded', function () {
+      var btn = document.getElementById('theme-toggle');
+      if (!btn) return;
+      var setIcon = function (t) { btn.textContent = t === 'dark' ? '☀' : '☾'; };
+      setIcon(document.documentElement.getAttribute('data-theme'));
+      btn.addEventListener('click', function () {
+        var next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        localStorage.setItem('theme', next);
+        setIcon(next);
+      });
+    });
+  })();
+</script>
+<link rel="icon" type="image/png" href="../logos+icons/abbylogo.png">
+<link rel="stylesheet" href="../style.css?v=7">
+</head>
+<body>
+<div class="wrap post-wide">
+
+  <header class="masthead">
+    <a class="name" href="../index.html"><img class="site-logo" src="../logos+icons/abbylogo.png" alt=""> abby dulski</a>
+    <nav class="masthead-nav">
+      <a href="../writing.html" class="active">writing</a>
+      <a href="../projects.html">projects</a>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle theme"></button>
+    </nav>
+  </header>
+
+  <article class="post post-wide">
+    <a class="post-back" href="../writing.html">&larr; writing</a>
+    <p class="date">july 25, 2026</p>
+    <h1>products i find fascinating</h1>
+    <p class="dek">a running list.</p>
+
+    <div class="post-body">
+      <p>[your intro here]</p>
+    </div>
+
+    <!-- 01 · image LEFT -->
+    <div class="product-row">
+      <div class="product-img">
+        <img src="https://augmental.tech/images/mouthpad-hero-still.jpg" alt="Augmental MouthPad">
+      </div>
+      <div class="product-text">
+        <p class="product-num">01</p>
+        <h2><a href="https://www.augmental.tech/" target="_blank" rel="noopener">Augmental MouthPad</a></h2>
+        <p>[write here]</p>
+      </div>
+    </div>
+
+    <!-- 02 · image RIGHT -->
+    <div class="product-row flip">
+      <div class="product-img">
+        <img src="https://eight-eightsleep-react.vercel.app/assets/img/product-pod5-cover.png" alt="Eight Sleep Pod">
+      </div>
+      <div class="product-text">
+        <p class="product-num">02</p>
+        <h2><a href="https://www.eightsleep.com/" target="_blank" rel="noopener">Eight Sleep Pod</a></h2>
+        <p>[write here]</p>
+      </div>
+    </div>
+
+    <!-- 03 · image LEFT -->
+    <div class="product-row">
+      <div class="product-img">
+        <img src="https://a-us.storyblok.com/f/1019164/584x584/48206c5576/compare_plus.jpg" alt="Mill Food Recycler">
+      </div>
+      <div class="product-text">
+        <p class="product-num">03</p>
+        <h2><a href="https://www.mill.com/food-recycler" target="_blank" rel="noopener">Mill Food Recycler</a></h2>
+        <p>[write here]</p>
+      </div>
+    </div>
+
+  </article>
+
+  <footer class="site-footer">
+    <p>abbydulski.me</p>
+  </footer>
+
+</div>
+</body>
+</html>
