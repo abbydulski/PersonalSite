@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>race reviews — Abby Dulski</title>
+<script>
+  (function () {
+    var stored = localStorage.getItem('theme');
+    var theme = stored === 'dark' ? 'dark' : 'light';
+    document.documentElement.setAttribute('data-theme', theme);
+    document.addEventListener('DOMContentLoaded', function () {
+      var btn = document.getElementById('theme-toggle');
+      if (!btn) return;
+      var setIcon = function (t) { btn.textContent = t === 'dark' ? '☀' : '☾'; };
+      setIcon(document.documentElement.getAttribute('data-theme'));
+      btn.addEventListener('click', function () {
+        var next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        localStorage.setItem('theme', next);
+        setIcon(next);
+      });
+    });
+  })();
+</script>
+<link rel="icon" type="image/png" href="../logos+icons/abbylogo.png">
+<link rel="stylesheet" href="../style.css?v=7">
+</head>
+<body>
+<div class="wrap post-wide">
+
+  <header class="masthead">
+    <a class="name" href="../index.html"><img class="site-logo" src="../logos+icons/abbylogo.png" alt=""> abby dulski</a>
+    <nav class="masthead-nav">
+      <a href="../writing.html" class="active">writing</a>
+      <a href="../projects.html">projects</a>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle theme"></button>
+    </nav>
+  </header>
+
+  <article class="post post-wide">
+    <a class="post-back" href="../writing.html">&larr; writing</a>
+    <p class="date">july 29, 2026</p>
+    <h1>race reviews</h1>
+    <p class="dek">every race i've run, reviewed.</p>
+
+    <div class="post-body">
+      <p>Course maps, photos, and honest reviews from every race I've done so far.</p>
+    </div>
+
+    <!-- 01 · image LEFT -->
+    <div class="product-row">
+      <div class="product-img">
+        <!-- drop course map or your photo into image_posts/race-cambridge.png -->
+        <img src="../image_posts/cambridge.jpg" alt="Cambridge Half Marathon">
+      </div>
+      <div class="product-text">
+        <p class="product-num">01</p>
+        <h2><a href="https://runsignup.com/Race/MA/Cambridge/CambridgeHalfMarathon" target="_blank" rel="noopener">Cambridge Half Marathon</a></h2>
+        <p class="product-meta">Cambridge, MA · Half Marathon</p>
+        <p>[your review here]</p>
+      </div>
+    </div>
+
+    <!-- 02 · image RIGHT -->
+    <div class="product-row flip">
+      <div class="product-img">
+        <img src="../image_posts/philly.png" alt="Philadelphia Half Marathon">
+      </div>
+      <div class="product-text">
+        <p class="product-num">02</p>
+        <h2><a href="https://www.philadelphiamarathon.com/races/half-marathon/" target="_blank" rel="noopener">Philadelphia Half Marathon</a></h2>
+        <p class="product-meta">Philadelphia, PA · Half Marathon</p>
+        <p>[your review here]</p>
+      </div>
+    </div>
+
+    <!-- 03 · image LEFT -->
+    <div class="product-row">
+      <div class="product-img">
+        <img src="../image_posts/providence.jpg" alt="Providence Marathon">
+      </div>
+      <div class="product-text">
+        <p class="product-num">03</p>
+        <h2><a href="https://rhoderaces.com/events/providence/" target="_blank" rel="noopener">Providence Marathon</a></h2>
+        <p class="product-meta">Providence, RI · Full Marathon</p>
+        <p>[your review here]</p>
+      </div>
+    </div>
+
+    <!-- 04 · image RIGHT -->
+    <div class="product-row flip">
+      <div class="product-img">
+        <img src="../image_posts/goldengate.jpg" alt="Golden Gate Half Marathon">
+      </div>
+      <div class="product-text">
+        <p class="product-num">04</p>
+        <h2><a href="https://www.goldengatehalf.com/" target="_blank" rel="noopener">Golden Gate Half Marathon</a></h2>
+        <p class="product-meta">San Francisco, CA · Half Marathon</p>
+        <p>[your review here]</p>
+      </div>
+    </div>
+
+    <!-- 05 · image LEFT -->
+    <div class="product-row">
+      <div class="product-img">
+        <img src="../image_posts/berkeley.jpg" alt="Berkeley Half Marathon">
+      </div>
+      <div class="product-text">
+        <p class="product-num">05</p>
+        <h2><a href="https://berkeleyhalfmarathon.com/" target="_blank" rel="noopener">Berkeley Half Marathon</a></h2>
+        <p class="product-meta">Berkeley, CA · Half Marathon</p>
+        <p>[your review here]</p>
+      </div>
+    </div>
+
+    <!-- 06 · image RIGHT -->
+    <div class="product-row flip">
+      <div class="product-img">
+        <img src="../image_posts/brazen.jpg" alt="Brazen Racing Summit Rock">
+      </div>
+      <div class="product-text">
+        <p class="product-num">06</p>
+        <h2><a href="https://brazenracing.com/summitrock/" target="_blank" rel="noopener">Brazen Racing Summit Rock</a></h2>
+        <p class="product-meta">Saratoga, CA · Half Marathon</p>
+        <p>[your review here]</p>
+      </div>
+    </div>
+
+    <!-- 07 · image LEFT -->
+    <div class="product-row">
+      <div class="product-img">
+        <img src="../image_posts/yosemite-half.jpg" alt="Yosemite Half Marathon">
+      </div>
+      <div class="product-text">
+        <p class="product-num">07</p>
+        <h2><a href="https://www.vacationraces.com/yosemite" target="_blank" rel="noopener">Yosemite Half Marathon</a></h2>
+        <p class="product-meta">Yosemite, CA · Half Marathon</p>
+        <p>[your review here]</p>
+      </div>
+    </div>
+
+    <!-- 08 · image RIGHT -->
+    <div class="product-row flip">
+      <div class="product-img">
+        <img src="../image_posts/second-half-sf.jpg" alt="SF Marathon 2nd Half">
+      </div>
+      <div class="product-text">
+        <p class="product-num">08</p>
+        <h2><a href="https://www.thesfmarathon.com/2nd-half-marathon/" target="_blank" rel="noopener">SF Marathon — 2nd Half</a></h2>
+        <p class="product-meta">San Francisco, CA · Half Marathon</p>
+        <p>[your review here]</p>
+      </div>
+    </div>
+
+  </article>
+
+  <footer class="site-footer">
+    <p>abbydulski.me</p>
+  </footer>
+
+</div>
+</body>
+</html>
